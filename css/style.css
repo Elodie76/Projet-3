@@ -148,27 +148,73 @@ input::placeholder {
     color: white;
 }
 
-.p-filtre{
-    font-weight: bold;
-    font-size: 1rem; /* figma 16px */
+.gap_title_filter{
+    gap: 8px;
 }
 
+
+.filter_bar{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.mot_Filtres{
+    display: flex;
+    
+}
+.filter_bar p{
+    
+    font-weight: bold;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
 .infogroup ul{
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 15px;
     
+    
 }
 .infogroup ul li{
     gap: 10px;
+    border: solid #d9d9d9;
+    padding: 4px 15px;
+    border-radius: 25px;
+    border-width: 2px;
+
+}
+
+.infogroup ul li a{
+    font-size: 17px;
+    font-weight: bold;
 }
 
 
 .infogroup ul i{
     color: var(--main-color);
 }
-    
+
+/* infobar */
+.info_bar{
+    display: flex;
+    gap: 10px;
+
+}
+.info_bar i{
+    color: var(--main-color);
+    width: 24px;
+    height: 24px;
+    border: solid #6c2020;
+    border-radius: 15px;
+    border-width: 5px;
+    justify-items: center;
+}
     
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
