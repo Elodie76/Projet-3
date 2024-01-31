@@ -14,35 +14,42 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
+
+
 <body>
-    <div class="main-container">
-        <header>
-            <nav class="navbar">
-                <img class="logo" src="./images/logo/Booki.png" alt="Logo/Booki">
-                <ul>
-                    <li><a href="">Hébergements</a></li>
-                    <li><a href="">Activités</a></li>
-                </ul>
-            
-                
-                
-            </nav>
-        </header>
-        <main class="main-container">
+    <header>
+        
+        <img  src="./images/logo/Booki.png" alt="Logo/Booki">
+        <nav>
+            <a href="#ancre_hébergements">Hébergements</a>
+            <a href="#ancre_activités">Activités</a>
+        </nav>
+    </header>
+    <main class="main-container">  
+    
+        
             <section class="infogroup">
                 <div>
                     <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div>
-                    <form method="post" action=""><!-- pas de données dans action car pas d'adresse backend, on reste sur la même url-->
-                        <label>
+                <form method="post" action=""><!-- pas de données dans action car pas d'adresse backend, on reste sur la même url-->
+                    <fieldset>
+                        <div class="icon_loupe">
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <label for="lieu">
+                        <div class="icon_locatilation">
                             <i class="fa-solid fa-location-dot"></i>
-                        </label>
-                        <input type="text" id="lieu" name="lieu" placeholder="Marseille,France" required>
-                        <input type="submit" value="Rechercher">
-                    </form> 
-                </div>
+                        </div>    
+                        </label>  
+                        <input type="text" id="lieu" name="lieu" placeholder="Marseille, France" required>
+                        <input class="submitbuton" type="submit" value="Rechercher">    
+                    </fieldset>
+                        
+                </form> 
+                
                 <ul><!-- dupliquer les balises : Alt+Maj+ fleche haut ou bas-->
                     <li>Filtres</li>
                     <li>
@@ -68,6 +75,9 @@
                 </div>
             </section>
 
+        
+        
+            
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
