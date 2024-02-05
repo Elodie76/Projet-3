@@ -3,9 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    max-width: 1440px;
+   
+    
     
 }
 
@@ -13,18 +12,24 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --filter-border-color: #d9d9d9;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    
 }
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
+    
     
     padding: 0px 50px;
     
 }
 
 .main-container {
+    margin: 0 auto;
     max-width: 1440px;
     box-sizing: border-box;
 }
@@ -73,21 +78,39 @@ a {
 
 header{
     display: flex;
+    
     justify-content: space-between;
-    padding-bottom: 35px;
+   
+    margin-bottom: 30px;
+    
+    height: 79px;
+    
     
 }
 
 header img{
-    align-items: center;
+    /* align-items: center; */
+    /* justify-content: flex-end; */
     height: 19px;
-    margin: 30px 50px 30px 0px;
+    width: 61.09px;
+    
+
+}
+
+.div-logo{
+   padding: 30px 50px 30px 50px;
+   object-fit: contain;
+   height: 79px;
+
 
 }
 nav{
  display: flex;
- padding: 0px 50px 30px 0px;
- align-items: center;
+ justify-content: center;
+ /* align-items: center; */
+ margin-left: 50px;
+ margin-right: 50px;
+ 
  gap: 68px;
 
 }   
@@ -144,7 +167,11 @@ fieldset input{
     display: flex;
     align-items: center;
     justify-content: space-around;
-       
+    background-color: var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px ;
+}
+.icon_locatilation :hover{
+    background-color: var();
 }
 
 input::placeholder {
@@ -193,12 +220,15 @@ input::placeholder {
 .infogroup ul li{
     gap: 10px;
     border: solid #d9d9d9;
-    padding: 4px 15px;
+    padding: 4px 19px;
     border-radius: 25px;
     border-width: 2px;
 
 }
 
+.infogroup ul li:hover{
+    background-color: var(--filter-bg-color);
+}
 .infogroup ul li a{
     font-size: 17px;
     font-weight: bold;
@@ -215,14 +245,28 @@ input::placeholder {
     gap: 10px;
 
 }
+
+
 .info_bar i{
     color: var(--main-color);
     width: 24px;
     height: 24px;
-    border: solid #6c2020;
+
+  
+    display: block;
+    border: solid #d9d9d9;
     border-radius: 15px;
-    border-width: 5px;
-    justify-items: center;
+    border-width: 1px;
+    
+    
+    
+}
+
+.icone-info-container{
+display: flex;
+align-items: center;
+justify-content: space-around;
+   
 }
     
 /****** Hebergements And Populaires ***********/
@@ -348,6 +392,26 @@ input::placeholder {
     border: none;
     font-size: 1.125rem;
     font-weight: 700;
+}
+
+/****** Activités à Marseille ******/
+
+.Activités-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Activités-cards .card{
+    max-width: 298px;
+    object-fit: contain;
+}
+
+.Activités-cards .card img{
+    max-width: 298px;
+    width: auto;
+    height: 380px;
+   
 }
 
 
