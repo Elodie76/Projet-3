@@ -21,17 +21,17 @@
 body {
     display: flex;
     flex-direction: column;
-    
-    
-    
     padding: 0px 50px;
-    
 }
 
 .main-container {
     margin: 0 auto;
     max-width: 1440px;
     box-sizing: border-box;
+}
+
+.section-style{
+    margin-bottom: 35px;
 }
 
 a {
@@ -145,16 +145,20 @@ nav a:hover{
 fieldset{
     border: none;
     display: flex;
-    gap: 24px;
+    
 }
 
 fieldset input{
     border: none;
     padding: 15px 16px 15px 16px;
-    border-radius: 0px 15px 15px 0px;
+   
     
     font-weight: bold;/* figma 700 */
 }
+fieldset > input[type="submit"] {
+    border-radius: 0px 15px 15px 0px;
+    }
+
 
 .icon_loupe{
     display: none
@@ -197,6 +201,8 @@ input::placeholder {
 
 .mot_Filtres{
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .filter_bar p{
@@ -304,6 +310,7 @@ justify-content: space-around;
     justify-content: space-between;
     align-items: stretch;
     gap: 30px;
+    flex-wrap: wrap;
     
 }
 
@@ -345,7 +352,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 32%;
-    padding: 30px;
+    
 }
 
 .populaires-title {
@@ -396,22 +403,50 @@ justify-content: space-around;
 
 /****** Activités à Marseille ******/
 
+
+.Activités-a-marseille .section-title{
+    margin-bottom: 30px;
+}
 .Activités-cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 30px;
+    flex: 0 0 25%;
+    
 }
 
+
+
 .Activités-cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     max-width: 298px;
     object-fit: contain;
+    padding: 0px;
+    flex: 1;
+    
+    
+    
 }
 
 .Activités-cards .card img{
-    max-width: 298px;
-    width: auto;
+    /* max-width: 298px; */
+    
+    width: 100%;
     height: 380px;
+    border-radius: 20px 20px 0px 0px;
    
+}
+
+.Activités-cards .card-content{
+    display: flex;
+    
+    width: 100%;
+    height: 19px;
+    margin: 20px 19px;
+
 }
 
 
@@ -436,7 +471,7 @@ justify-content: space-around;
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .populaires-cards a {
@@ -450,9 +485,31 @@ justify-content: space-around;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    /* Activités */
+
+    .Activités-cards .card img{
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .Activités-cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    .Activités-cards .card img{
+        height: 141px;
+    }
+    /* Activités */
+
     /* ... */
+}
+
+@media (max-width: 320px) {
+    /* largeur mini fixée */
 }
