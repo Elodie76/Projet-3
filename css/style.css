@@ -132,7 +132,7 @@ nav{
 
 nav a{
     
-    height: auto 35px;
+    height: 35px;
     border-top: solid transparent;
     border-top-width: 2px;
     padding-top: 14px;
@@ -144,7 +144,7 @@ nav a:hover{
     border-top: solid ;
     border-top-width: 2px;
     padding-top: 14px;
-    height: auto 35px;
+    height: 35px;
 }
 
 /****** Filtre ***********/
@@ -193,9 +193,6 @@ fieldset > input[type="submit"] {
     justify-content: space-around;
     background-color: var(--main-bg-color);
     border-radius: 15px 0px 0px 15px ;
-}
-.icon_locatilation :hover{
-    background-color: var();
 }
 
 input::placeholder {
@@ -710,6 +707,3 @@ input::placeholder {
     }
     /* ... */
 }
-
-
-    /* largeur mini fixée 320px */
