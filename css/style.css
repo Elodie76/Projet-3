@@ -486,12 +486,13 @@ input::placeholder {
 .Activités-cards .card-content{
     display: flex;
     overflow-wrap: break-word;
-    width: 100%;
     height: auto;
     margin: 20px 19px;
     max-width: 100%;
     hyphens: auto;
-
+}
+.btn-afficher-plus{
+    background-color: transparent;
 }
 
 /* footer */
@@ -574,9 +575,7 @@ input::placeholder {
     .Activités-cards .card img{
         height: 200px;
     }
-    .responsive-text{
-
-    }
+}  
     
 
 /* Small devices (phones, less than 768px) */
